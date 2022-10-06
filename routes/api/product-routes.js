@@ -48,12 +48,6 @@ router.post('/', async (req, res) => {
       tagIds: [1, 2, 3, 4]
     }
   */
-  try {
-    const newProduct = await Product.create(req.body);
-    res.status(200).json(newProduct);
-  } catch (err) {
-    res.status(400).json(err);
-  };
 
   Product.create(req.body)
     .then((product) => {
