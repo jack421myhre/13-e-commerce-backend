@@ -11,11 +11,27 @@ router.get('/', async (req, res) => {
     const products = await Product.findAll({
       include: [{ model: Tag }, { model: Category }],
     });
+    console.log(products);
     res.status(200).json(products);
   } catch (err) {
     res.status(500).json(err);
   }
 });
+
+router.get('/:id', async (req, res) => {
+  try {
+    const product = await Product.findOne({
+      where: {
+        id: req.params.id
+      },
+      include: [{ model: Tag }, { model: Category }],
+    });
+    res.status(200).json(product);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 
 router.post('/', async (req, res) => {
   try {
