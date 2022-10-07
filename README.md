@@ -4,6 +4,7 @@
 This application allows the user to track employees, roles, departments, and managers.
 ## Table of Contents
 * [Installation](#installation)
+* [Environment](#environment)
 * [Usage](#usage)
 * [Walkthrough](#walkthrough)
 * [License](#license)
