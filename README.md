@@ -1,7 +1,7 @@
 # E-Commerce Back End (ORM)
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 ## Description
-This application allows the user to track employees, roles, departments, and managers.
+This is a simple CRUD application that allows the user to manage inventory through product names, IDs, categories, and tags.
 ## Table of Contents
 * [Installation](#installation)
 * [Environment](#environment)
